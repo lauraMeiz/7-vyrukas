@@ -9,7 +9,7 @@ main {
   margin-left: calc((100% - 800px) / 2);
   background-color: #7a5ba7;
 }
-div {
+.div-main {
   padding-top: 30px;
   line-height: 10px;
   text-align: center;
@@ -21,13 +21,21 @@ div {
   background-color: #886bae;
   padding-bottom: 50px;
 }
+.div-main::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  border-bottom: 60px solid #9580bb;
+  border-right: 60px solid #7a5ca8;
+  width: 0;
+}
 
-div > h1 {
+.title {
   font-family: Verdana, Geneva, Tahoma;
   font-size: 100px;
   color: #f8f0e5;
 }
-div > h5 {
+.omg {
   color: #d78965;
   font-family: Verdana, Geneva, Tahoma;
   font-size: 20px;
@@ -35,7 +43,7 @@ div > h5 {
   margin-bottom: 2px;
 }
 
-div > p {
+.content {
   font-family: Verdana, Geneva, Tahoma;
   font-size: 15px;
   line-height: 18px;
@@ -63,15 +71,7 @@ div > p {
   text-transform: uppercase;
   color: #f8f0e5;
 }
-.content::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-bottom: 60px solid #9580bb;
-  border-right: 60px solid #7a5ca8;
-  width: 0;
-}
+
 .main-img {
   float: left;
   width: 55%;
