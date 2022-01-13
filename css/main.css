@@ -1,6 +1,8 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: #7a5ba7;
+  box-sizing: border-box;
 }
 main {
   margin-top: 60px;
@@ -50,7 +52,7 @@ main {
   margin-bottom: 20px;
 }
 
-.go {
+.description {
   font-family: Verdana, Geneva, Tahoma;
   text-align: center;
   font-size: 8px;
